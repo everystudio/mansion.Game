@@ -15,12 +15,23 @@ public class BannerBase : MonoBehaviourEx {
 		return;
 	}
 
-	void Start()
+	void dummy_start()
 	{
 		m_bannerRoot = gameObject.GetComponent<BannerRoot> ();
 		gameObject.GetComponent<Button>().onClick.AddListener(()=>
 			{
 				onClicked();
 			});
+	}
+
+	public void Initialize(BannerRoot _root)
+	{
+		m_bannerRoot = _root;
+		initialize();
+	}
+
+	virtual protected void initialize()
+	{
+		return;
 	}
 }

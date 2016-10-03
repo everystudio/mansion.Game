@@ -11,4 +11,6 @@ public class Define : DefineBase
 	public const float MANSION_SIZE_BIAS = 10.0f;
 	public const float MANSION_SIZE_SINGLE = 200.0f;
 
+	public const float MANSION_HEADER = 80.0f;
+
 }
