@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class MansionBase : MonoBehaviour {
 
-	public void Initialize( int _iMansionSerial)
+	public void Initialize( int _iMansionSerial )
 	{
 		foreach( RoomBase room in m_RoomList ){
 			Destroy(room.gameObject);
@@ -17,7 +17,7 @@ public class MansionBase : MonoBehaviour {
 		{
 			iRoomNum = 4;
 		}
-		Debug.LogError(iRoomNum);
+		//Debug.LogError(iRoomNum);
 
 		for( int i = 0; i < iRoomNum; i++)
 		{

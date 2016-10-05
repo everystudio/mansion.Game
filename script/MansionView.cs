@@ -44,7 +44,7 @@ public class MansionView : MonoBehaviour {
 			}
 			fHeight += mansion.GetSizeHeight();
 		}
-		Debug.LogError(fHeight);
+		//Debug.LogError(fHeight);
 		m_goMansionContent.transform.rectTransform().sizeDelta = new Vector2(
 			m_goMansionContent.transform.rectTransform().sizeDelta.x,
 			fHeight);
