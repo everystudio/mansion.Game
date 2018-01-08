@@ -26,7 +26,7 @@ abstract public class UIMenuPageBase : CPanel {
 		}
 		else
 		{
-			Debug.LogError("Error No Content");
+			return;
 		}
 
 		// ダミーとかで付いてるやつを削除

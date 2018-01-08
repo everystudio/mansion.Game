@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public class UIMansionMenu : UIMenuPageBase {
+public class UIMansionMenu : CPanel {
 
 	static public void btnMansionList()
 	{
@@ -19,8 +19,10 @@ public class UIMansionMenu : UIMenuPageBase {
 		UIAssistant.main.ShowPage("TownList");
 	}
 
+	/*
 	protected override Dictionary<string, UnityAction> getButtonList()
 	{
+		return new Dictionary<string, UnityAction>();
 		Dictionary<string, UnityAction> menu_list = new Dictionary<string, UnityAction>()
 		{
 			{ "娼館一覧",btnMansionList },
@@ -29,6 +31,7 @@ public class UIMansionMenu : UIMenuPageBase {
 		};
 		return menu_list;
 	}
+	*/
 
 	// Use this for initialization
 	protected override void awake()
